@@ -1,0 +1,116 @@
+.container {
+    padding: 20px;
+    max-width: 600px;
+    margin: auto;
+  }
+  
+  .heading {
+    font-size: 27px;
+    margin-bottom: 20px;
+    text-align: center;
+    color:black;
+  }
+  
+  .movieCard {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 10px;
+    margin-bottom: 20px;
+    background-color: #fff;
+    color:black;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  .movieCard img {
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+    border-radius: 8px;
+  }
+  
+  .movieInfo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 10px;
+  }
+  
+  .movieInfo p {
+    font-size: 22px;
+    margin-bottom: 10px;
+    font-weight: 500;
+  }
+  
+  .button1 {
+    padding: 10px 20px;
+    margin: 5px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: #28a745;
+    color: white;
+  }
+  
+  .button2 {
+    padding: 10px 20px;
+    margin: 5px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: #dc3545;
+    color: white;
+  }
+  .button1:hover{
+    background-color: #117829; 
+  }
+  .button2:hover{
+    background-color: #a11624;
+  }
+  
+  .err {
+    text-align: center;
+    font-size: 24px;
+    margin-bottom: 195px;
+    color: black;
+    font-weight: 500;
+  }
+  
+  
+  @media (min-width: 768px) {
+    .movieCard {
+      flex-direction: row;
+      align-items: flex-start;
+    }
+  
+    .movieCard img {
+      width: 150px;
+      height: auto;
+    }
+  
+    .movieInfo {
+      align-items: flex-start;
+      margin-left: 20px;
+    }
+
+  }
+  
+  @media (min-width: 1024px) {
+    .movieCard {
+      flex-direction: row;
+      align-items: flex-start;
+      padding: 20px;
+    }
+  
+    .movieInfo {
+      align-items: flex-start;
+      margin-left: 20px;
+    }
+  
+    .button1, .button2 {
+      margin: 10px;
+    }
+  }
+  

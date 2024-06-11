@@ -1,0 +1,96 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  background-color: black;
+  color: #fff;
+  font-weight: 700;
+  position: relative;
+  z-index: 1000; 
+}
+
+.brand {
+  display: flex;
+  align-items: center;
+}
+.brand h2{
+  color:rgb(220, 53, 69);
+  font-weight: bold;
+}
+
+.brandLink {
+  text-decoration: none;
+  color: #fff;
+}
+
+.nav {
+  display: flex;
+  gap: 45px;
+  align-items: center;
+}
+
+.link {
+  color: #fff;
+  text-decoration: none;
+  font-size: 18px;
+}
+.link:hover{
+  color: rgb(202, 39, 52);
+  transition: transform 0.2s;
+  transform: scale(1.2);
+}
+
+.activeLink {
+  transition: transform 0.2s;
+  transform: scale(1.2);
+  color:  rgb(255,193,7);
+}
+
+.iconButton {
+  background: none;
+  border: none;
+  color: #fff;
+  cursor: pointer;
+  font-size: 18px;
+}
+
+.hamburger {
+  display: none;
+  cursor: pointer;
+}
+
+@media (max-width: 1000px){
+  .nav{
+    gap: 30px;
+  }
+}
+@media (max-width: 800px){
+  .nav{
+    gap: 20px;
+  }
+}
+
+@media (max-width: 768px) {
+  .nav {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 60px;
+    left: 0;
+    width: 100%;
+    background-color: #333;
+    padding: 10px 0;
+    text-align: center;
+    z-index: 999; 
+  }
+
+  .navOpen {
+    display: flex;
+  }
+
+  .hamburger {
+    display: block;
+    font-size: 24px;
+  }
+}

@@ -1,0 +1,44 @@
+
+.support {
+    padding: 20px;
+    width: 600px;
+    border: 1px solid #ddd;
+    margin: auto;
+    margin-top: 100px;
+    margin-bottom: 100px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, -0.81);
+    background-color: white;
+    color: black;
+    font-weight: 500;
+  }
+  
+  .support h2 {
+    color: #e50914;
+    text-align: center;
+  }
+  h3{
+    margin-left: 28px;
+    color: rgb(13,202,240);
+  }
+  
+  .support p {
+    margin-top: 10px;
+    font-size: 16px;
+    line-height: 1.5;
+  }
+  
+  @media (max-width: 768px){
+    .support{
+        width: 450px;
+    }
+  }
+  @media (max-width: 480px){
+    .support{
+        width: 400px;
+    }
+  }
+  @media (max-width: 390px){
+    .support{
+        width: 300px;
+    }
+  }
